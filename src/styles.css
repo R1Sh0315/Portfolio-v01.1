@@ -1,4 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald&family=Protest+Riot&family=Ubuntu&display=swap");
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  color: rgb(255 255 255);
+  background-color: #1c1a27;
+  /* opacity: 87%; */
+  height: 100vh;
+}
+
+.profile-card {
+  font-family: "Oswald", sans-serif;
+  color: E3E1D9;
+}
+
+.name {
+  font-size: 26pt;
+  font-weight: 900;
+}
+.name:hover,
+.designation:hover,
+.whoami:hover {
+  color: B4B4B8;
+}
+
+.designation {
+  font-size: 20pt;
+  font-weight: 900;
+  text-align: start;
+}
+
+.whoami {
+  font-weight: 900;
+  text-align: start;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.btn-contianer {
+  border: 1px solid white;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  margin: 7px 0;
 }
