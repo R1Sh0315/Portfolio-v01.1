@@ -1,17 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald&family=Protest+Riot&family=Ubuntu&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Edu+TAS+Beginner&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oswald&family=Protest+Riot&family=Ubuntu&display=swap");
 .App {
   font-family: sans-serif;
   text-align: center;
   color: rgb(255 255 255);
   background-color: #1c1a27;
   /* opacity: 87%; */
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.backgroung-img {
+  position: absolute;
+  height: inherit;
+}
+
+.skill-disc-panel {
+  width: 70%;
+}
+
+.skill-discribtion {
+  position: absolute;
+  top: 69px;
+  display: flex;
+  margin: 0 25px;
+  text-align: start;
+  padding: 3px;
+  flex-direction: row;
+  width: 95%;
+}
+
+.bg-container {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  margin: 7px;
 }
 
 .profile-card {
   font-family: "Oswald", sans-serif;
   color: E3E1D9;
+  position: relative;
 }
 
 .name {
@@ -48,6 +76,257 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 17px;
-  margin: 7px 0;
+  border-radius: 4px;
+  margin: 7px 9px;
+  width: 100%;
+  min-width: 250px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.about-card-container {
+  height: 296px;
+  margin: 14px 25px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ac-name {
+  color: #39a7ff;
+  padding: 0px 6px;
+  font-weight: 600;
+}
+.title-background {
+  font-size: 33pt;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  top: 5px;
+  left: 19px;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.about-card-title {
+  display: block;
+  height: 67px;
+}
+.title-label {
+  height: 67px;
+  position: absolute;
+  top: 28px;
+  left: 21px;
+  font-size: 19pt;
+  font-weight: 700;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.about-card-detail-contianer {
+  margin: 7px 25px;
+  display: flex;
+}
+
+.about-in-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+}
+
+.person-degree,
+.person-mail,
+.person-age,
+.person-location {
+  /* border: 1px solid white; */
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin: 7px 17px;
+}
+
+.acc-icon {
+  margin: 5px 5px;
+  color: #39a7ff;
+}
+
+.download-resume {
+  border: 1px solid #39a7ff;
+  padding: 12px 0;
+  margin: 7px 79% 0 25px;
+  color: #39a7ff;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(57, 167, 255, 0.1);
+  transition: 0.5s ease-out;
+}
+.download-resume:hover {
+  background-color: #39a7ff;
+  color: rgb(255 255 255);
+  font-weight: 600;
+  box-shadow: 0 8px 32px 0 rgba(57, 167, 255, 0.4);
+}
+
+.about-me {
+  font-size: 21pt;
+  display: flex;
+  margin: 0 24px;
+  color: #ffeed9;
+}
+
+strong {
+  padding: 0px 6px 0 0;
+  color: #39a7ff;
+}
+
+.card-container {
+  margin: 14px 25px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.skill-container {
+  margin: 14px 25px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 487px;
+}
+
+.exp-contianer {
+  margin: 14px 25px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 700px;
+  display: flex;
+}
+
+.exp-content {
+  position: absolute;
+  top: 69px;
+  display: flex;
+  margin: 0 25px;
+  text-align: start;
+  padding: 3px;
+  flex-direction: row;
+  width: 95%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-summary {
+  margin: 3px 9px 24px 9px;
+}
+
+.skill-summary,
+.skill-score,
+.experience-container {
+  /* border: 1px solid white; */
+}
+
+.primary-btn {
+  background-color: #39a7ff;
+  color: rgb(255 255 255);
+  font-weight: 600;
+  box-shadow: 0 8px 32px 0 rgba(57, 167, 255, 0.4);
+  border: #39a7ff;
+}
+
+.secondary-btn {
+}
+.ghost-btn {
+  background-color: transparent;
+}
+
+.experience-container {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.yexp {
+  font-size: 70pt;
+}
+.mexp,
+.dot {
+  font-size: 30pt;
+}
+
+.skill-ye {
+  font-size: 20pt;
+}
+
+.pb-dot {
+  position: absolute;
+  margin: -2px 0px 0 -10px;
+  height: 10px;
+  width: 10px;
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  background-color: #39a7ff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.pb-label {
+  margin: 10px 0px -14px 0;
+  color: #ff004d;
+}
+.pb-fill-bg {
+  background-image: linear-gradient(
+    90deg,
+    rgba(178, 220, 249, 1) 0%,
+    rgba(111, 191, 255, 1) 49%,
+    rgba(57, 167, 255, 1) 100%
+  );
+}
+.pb-contianer {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .row-1,
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-card-container {
+    height: 414px;
+  }
+
+  .download-resume {
+    margin: 7px 25px 0 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-card-container {
+    height: 200px;
+    margin: 14px 17px;
+  }
+  .about-in-detail {
+    display: flex;
+    flex-direction: column;
+  }
 }

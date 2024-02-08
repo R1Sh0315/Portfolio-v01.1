@@ -11,7 +11,9 @@ const AboutComponent: React.FC = () => {
         {/* I am a developer based in Pune, INDIA focused on creating interactive
         digital experiences on the web, working with industry leaders such as
         Prodapt. */}
-        I build pixel-perfect, engaging, and accessible digital experiences.
+        {/* I build pixel-perfect, engaging, and accessible digital experiences. */}
+        I'm a professional web designer, My motive is to build a best web design
+        with my all years of experience and efforts.
       </div>
     </div>
   );
