@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LabelShadowComponent from "./Label-Shadow";
 import ButtonGroupComponent from "./Buttongroup-Component";
+import TimeLineComponent from "./Timeline-component";
 
 interface IExp {
   label: string;
@@ -15,13 +16,18 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
     setBtnGrpValue(value);
   };
 
+  const experience = <div className="exp-body">Hello</div>;
+
   return (
     <div className="exp-contianer">
       <LabelShadowComponent label={label} />
       <div className="exp-content">
         <ButtonGroupComponent bgList={bgList} outputValue={selectedValue} />
       </div>
-      <div>{bgList[btnGrpValue]}</div>
+      <div className="exp-body-container">
+        {experience}
+        <TimeLineComponent timelineType={"horizontral"} cell2Type={"initial"} />
+      </div>
     </div>
   );
 };

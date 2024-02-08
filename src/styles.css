@@ -216,13 +216,14 @@ strong {
   border: 1px solid rgba(255, 255, 255, 0.18);
   height: 700px;
   display: flex;
+  flex-direction: column;
 }
 
 .exp-content {
-  position: absolute;
-  top: 69px;
+  position: relative;
+  /* top: 69px; */
   display: flex;
-  margin: 0 25px;
+  margin: 77px 25px 15px 25px;
   text-align: start;
   padding: 3px;
   flex-direction: row;
@@ -256,12 +257,34 @@ strong {
   background-color: transparent;
 }
 
+.exp-body-container {
+  border: 1px solid white;
+  margin: 15px 25px;
+  height: inherit;
+}
+
 .experience-container {
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.time-line-contianer {
+  border: 1px solid white;
+}
+
+.horizontral-timeline {
+  display: flex;
+  flex-direction: row;
+}
+
+.time-line-cell-1,
+.time-line-cell-2,
+.time-line-cell-3 {
+  border: 1px solid white;
+  width: 100%;
 }
 
 .yexp {
