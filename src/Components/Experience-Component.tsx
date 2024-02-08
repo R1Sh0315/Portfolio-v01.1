@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import LabelShadowComponent from "./Label-Shadow";
 import ButtonGroupComponent from "./Buttongroup-Component";
 
@@ -7,20 +7,21 @@ interface IExp {
 }
 
 const bgList = ["Experience", "Qualification"];
-// const [btnGrpValue, setBtnGrpValue] = useState<string | number | undefined>();
-
-// const selectedValue = (value: string | number) => {
-//   setBtnGrpValue(value);
-// };
 
 const ExperienceComponent: React.FC<IExp> = ({ label }) => {
+  const [btnGrpValue, setBtnGrpValue] = useState<number>(0);
+
+  const selectedValue = (value: number) => {
+    setBtnGrpValue(value);
+  };
+
   return (
     <div className="exp-contianer">
       <LabelShadowComponent label={label} />
       <div className="exp-content">
-        <ButtonGroupComponent bgList={bgList} />
+        <ButtonGroupComponent bgList={bgList} outputValue={selectedValue} />
       </div>
-      {/* ------- asedad {btnGrpValue} */}
+      <div>{bgList[btnGrpValue]}</div>
     </div>
   );
 };

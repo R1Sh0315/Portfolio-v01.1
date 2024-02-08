@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 interface ButtonProps {
   label: string;
-  onClick?: () => String | number;
+  onClick?: () => String | number | void;
   bgColor?: string;
 }
 
