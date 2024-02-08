@@ -1,0 +1,20 @@
+{
+  "Experience": [
+    {
+      "icon": "../utility/prodapt-logo.svg",
+      "companyName": "Prodapt",
+      "yearOfWork": "2021 - present",
+      "designation": "software Engineer | Frontend Developer",
+      "workDiscription": " I've spent almost 2.5+ years delivering innovative web solutions. Proficient in modern frontend technologies, I've collaborated on diverse projects, ensuring high-quality code, responsive designs, and seamless user experiences. Passionate about continuous learning, I've contributed to team success through effective problem-solving and communication skills."
+    }
+  ],
+  "Qualification": [
+    {
+      "icon": "../utility/nmiet-logo.PNG",
+      "collegeName": "Nutan Maharashtra Institute of Engineering and Technology",
+      "yearOfWork": "2017 - 2020",
+      "qualificationIn": "Mechanical Engineering",
+      "workDiscription": "Mechanical engineering graduate with strong IT skills and expertise in frontend coding and UI/UX design. Passionate about merging technical knowledge with creative design to deliver exceptional user experiences."
+    }
+  ]
+}

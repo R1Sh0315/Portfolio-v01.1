@@ -29,7 +29,7 @@
 }
 
 .bg-container {
-  /* border: 1px solid white; */
+  border: 1px solid #ffeed9;
   display: flex;
   flex-direction: row;
   border-radius: 2px;
@@ -71,7 +71,7 @@
 }
 
 .btn-contianer {
-  /* border: 1px solid white; */
+  border: 1px solid #ffeed9;
   height: 36px;
   display: flex;
   justify-content: center;

@@ -16,7 +16,24 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
     setBtnGrpValue(value);
   };
 
-  const experience = <div className="exp-body">Hello</div>;
+  const experience = (
+    <div className="exp-body">
+      <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
+      <TimeLineComponent
+        timelineType={"vertical"}
+        cell2Type={"mid"}
+        istoggle={true}
+      />
+      <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
+    </div>
+  );
+
+  const qualification = (
+    <div className="exp-body">
+      <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
+      <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
+    </div>
+  );
 
   return (
     <div className="exp-contianer">
@@ -25,14 +42,7 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
         <ButtonGroupComponent bgList={bgList} outputValue={selectedValue} />
       </div>
       <div className="exp-body-container">
-        {experience}
-        <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
-        <TimeLineComponent
-          timelineType={"vertical"}
-          cell2Type={"mid"}
-          istoggle={true}
-        />
-        <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
+        {bgList[btnGrpValue] === "Qualification" ? qualification : experience}
       </div>
     </div>
   );
