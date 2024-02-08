@@ -3,6 +3,7 @@ import React, { useState } from "react";
 interface ITimeline {
   timelineType: string;
   cell2Type: string;
+  istoggle?: boolean;
 }
 
 // enum Stage {
@@ -14,11 +15,14 @@ interface ITimeline {
 const TimeLineComponent: React.FC<ITimeline> = ({
   timelineType,
   cell2Type,
+  istoggle,
 }) => {
   return (
-    <div className={`time-line-contianer ${timelineType}-timeline`}>
-      <div className="time-line-cell-1">
-        <div className="time-line-cell-1-container">Abcdef</div>
+    <div
+      className={`time-line-contianer ${timelineType}-timeline${istoggle ? "-reverse" : ""}`}
+    >
+      <div className={`time-line-cell-1${istoggle ? "-reverse" : ""}`}>
+        <div className="time-line-cell-1-container">123341</div>
       </div>
       <div className={`time-line-cell-2`}>
         <div className={`${cell2Type}-stage`}>
@@ -33,7 +37,9 @@ const TimeLineComponent: React.FC<ITimeline> = ({
           ></div>
         </div>
       </div>
-      <div className="time-line-cell-3">Right</div>
+      <div className={`time-line-cell-3${istoggle ? "-reverse" : ""}`}>
+        <div className="time-line-cell-3-container">Abcdef</div>
+      </div>
     </div>
   );
 };
