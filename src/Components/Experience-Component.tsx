@@ -26,7 +26,9 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
       </div>
       <div className="exp-body-container">
         {experience}
-        <TimeLineComponent timelineType={"horizontral"} cell2Type={"initial"} />
+        <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
+        <TimeLineComponent timelineType={"vertical"} cell2Type={"mid"} />
+        <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
       </div>
     </div>
   );
