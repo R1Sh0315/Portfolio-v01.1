@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 
+interface IData {
+  [key: string]: any;
+}
+
 interface ITimeline {
   timelineType: string;
   cell2Type: string;
   istoggle?: boolean;
+  data: IData;
 }
 
 // enum Stage {
@@ -16,13 +21,18 @@ const TimeLineComponent: React.FC<ITimeline> = ({
   timelineType,
   cell2Type,
   istoggle,
+  data,
 }) => {
+  console.log("data -->", data[0].icon);
+
   return (
     <div
       className={`time-line-contianer ${timelineType}-timeline${istoggle ? "-reverse" : ""}`}
     >
       <div className={`time-line-cell-1${istoggle ? "-reverse" : ""}`}>
-        <div className="time-line-cell-1-container">123341</div>
+        <div className="time-line-cell-1-container">
+          <img src={data[0].icon} alt="test" />
+        </div>
       </div>
       <div className={`time-line-cell-2`}>
         <div className={`${cell2Type}-stage`}>

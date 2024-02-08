@@ -3,6 +3,8 @@ import LabelShadowComponent from "./Label-Shadow";
 import ButtonGroupComponent from "./Buttongroup-Component";
 import TimeLineComponent from "./Timeline-component";
 
+import jsonData from "../Json/my.json";
+
 interface IExp {
   label: string;
 }
@@ -10,6 +12,9 @@ interface IExp {
 const bgList = ["Experience", "Qualification"];
 
 const ExperienceComponent: React.FC<IExp> = ({ label }) => {
+  const qualificationData = jsonData.Qualification;
+  const experienceData = jsonData.Experience;
+
   const [btnGrpValue, setBtnGrpValue] = useState<number>(0);
 
   const selectedValue = (value: number) => {
@@ -18,20 +23,21 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
 
   const experience = (
     <div className="exp-body">
-      <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
       <TimeLineComponent
         timelineType={"vertical"}
-        cell2Type={"mid"}
-        istoggle={true}
+        cell2Type={"initial"}
+        data={experienceData}
       />
-      <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
     </div>
   );
 
   const qualification = (
     <div className="exp-body">
-      <TimeLineComponent timelineType={"vertical"} cell2Type={"initial"} />
-      <TimeLineComponent timelineType={"vertical"} cell2Type={"end"} />
+      <TimeLineComponent
+        timelineType={"vertical"}
+        cell2Type={"initial"}
+        data={qualificationData}
+      />
     </div>
   );
 

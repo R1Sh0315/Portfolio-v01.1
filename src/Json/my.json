@@ -10,11 +10,25 @@
   ],
   "Qualification": [
     {
+      "icon": "../utility/newtonschool-logo.PNG",
+      "collegeName": "Newton School",
+      "yearOfWork": "2020 - 2021",
+      "qualificationIn": "Full Stack Development",
+      "workDiscription": " Experienced in IT and frontend development. Completed NewtonSchool full-stack course, mastering various technologies for robust application development and effective problem-solving."
+    },
+    {
       "icon": "../utility/nmiet-logo.PNG",
       "collegeName": "Nutan Maharashtra Institute of Engineering and Technology",
       "yearOfWork": "2017 - 2020",
       "qualificationIn": "Mechanical Engineering",
       "workDiscription": "Mechanical engineering graduate with strong IT skills and expertise in frontend coding and UI/UX design. Passionate about merging technical knowledge with creative design to deliver exceptional user experiences."
+    },
+    {
+      "icon": "../utility/dy-patil-logo.svg",
+      "collegeName": "DY Patil Polytechnic",
+      "yearOfWork": "2014 - 2017",
+      "qualificationIn": "Mechanical Engineering",
+      "workDiscription": "Diploma in Mechanical Engineering with proficient IT and frontend coding skills. Adept in merging engineering principles with technological expertise for innovative solutions. Passionate about leveraging cross-disciplinary knowledge for impactful projects."
     }
   ]
 }
