@@ -23,7 +23,7 @@ const TimeLineComponent: React.FC<ITimeline> = ({
   istoggle,
   data,
 }) => {
-  console.log("data -->", data[0].icon);
+  // console.log("data -->", data[0].icon);
 
   return (
     <div
@@ -31,7 +31,7 @@ const TimeLineComponent: React.FC<ITimeline> = ({
     >
       <div className={`time-line-cell-1${istoggle ? "-reverse" : ""}`}>
         <div className="time-line-cell-1-container">
-          <img src={data[0].icon} alt="test" />
+          {/* <img src={data[0].icon} alt="test" /> */}
         </div>
       </div>
       <div className={`time-line-cell-2`}>
