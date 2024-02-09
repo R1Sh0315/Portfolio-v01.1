@@ -8,6 +8,10 @@
   /* height: 100vh; */
 }
 
+a{
+  text-decoration: none;
+}
+
 .backgroung-img {
   position: absolute;
   height: inherit;
@@ -15,6 +19,27 @@
 
 .skill-disc-panel {
   width: 70%;
+}
+
+.pill-container{
+  /* border: 1px solid #ffeed9; */
+  height: 21px;
+  font-size: 8pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 16px;
+  border-radius: 17px;
+  margin: 2px;
+  background: #0D9276;
+  color: #0F1035;
+  font-weight: 700;
+  opacity: 0.4;
+}
+.pill-container:hover{
+  background: #0D9276;
+  opacity: 0.8;
+  color: #00FFCA;
 }
 
 .skill-discribtion {
@@ -274,6 +299,7 @@ strong {
 .time-line-contianer {
   /* border: 1px solid white; */
   min-height: 84px;
+  height: 164px;
 }
 
 .vertical-timeline {
@@ -300,7 +326,7 @@ strong {
 .mid-stage-core,
 .end-stage-core {
   margin: auto;
-  border: 3px dashed #f8f4ec;
+  border: 3px dashed #C7C8CC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,7 +354,7 @@ strong {
 .mid-stage-dash,
 .end-stage-dash {
   display: flex;
-  border-right: 3px dashed #f8f4ec;
+  border-right: 3px dashed #C7C8CC;
   height: 100%;
 }
 
@@ -359,7 +385,7 @@ strong {
 }
 .time-line-cell-1-container {
   /* border: 1px solid white; */
-  margin: 0 7px;
+  margin: 0 13px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -383,7 +409,7 @@ strong {
 
 .time-line-cell-3-container {
   /* border: 1px solid white; */
-  margin: 0 7px;
+  margin: 0 13px;
 }
 
 .yexp {
@@ -425,17 +451,22 @@ strong {
   margin: 0 10px;
 }
 
+.tl-certificate-contianer{
+  /* border: 1px solid white; */
+  width: 90%;
+  display: flex;
+}
+
 .tl-icon-contianer {
-  border: 1px solid white;
   padding: 10px;
   border-radius: 24px;
   display: flex;
   background: white;
   width: fit-content;
+  height: 25px;
 }
 
 .tl-icon {
-  border: 1px solid white;
   height: 25px;
   width: 25px;
 }
@@ -459,7 +490,7 @@ strong {
 .tl-qul-des {
   font-size: 14pt;
   display: flex;
-  padding-top: 45px;
+  padding-top: 14px;
   font-weight: 600;
   color: #f5f5f5;
 }

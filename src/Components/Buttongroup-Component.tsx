@@ -19,7 +19,7 @@ const ButtonGroupComponent: React.FC<IBtnGroup> = ({ bgList, outputValue }) => {
   return (
     <div className="bg-container">
       {bgList.map((el, key) => (
-        <>
+        < >
           <ButtonComponent
             key={key}
             label={el}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PillComponent from "./Pill-Component";
 
 interface IData {
   [key: string]: any;
@@ -25,10 +26,13 @@ const TimeLineComponent: React.FC<ITimeline> = ({
 }) => {
   let cell2TypeAlt = "initial";
 
-  const cellFormating = (val:number)=>{
-    console.log(val, val === data.length - 1 ? "end" : val === 0 ? "initial" : "mid")
-    return (val === data.length - 1 && val !== 0)  ? "end" : val === 0 ? "initial" : "mid";
-  }
+  const cellFormating = (val: number): string => {
+    return val === data.length - 1 && val !== 0
+      ? "end"
+      : val === 0
+      ? "initial"
+      : "mid";
+  };
 
   const tlElement = data.map((li: any, key: number) => (
     <div
@@ -40,9 +44,13 @@ const TimeLineComponent: React.FC<ITimeline> = ({
       <div className={`time-line-cell-1${istoggle ? "-reverse" : ""}`}>
         <div className="time-line-cell-1-container">
           <div className="tl-icon-contianer">
-            <img className="tl-icon" src={li?.icon} alt="test" />
+            <a href={li?.url} target="_blank">
+              <img className="tl-icon" src={li?.icon} alt="test" />
+            </a>
           </div>
-          <div className="tl-com-ins-name">{li?.companyName}</div>
+          <div className="tl-com-ins-name">
+            {li?.companyName || li?.collegeName}
+          </div>
           <div className="tl-year-container">{li?.yearOfWork}</div>
         </div>
       </div>
@@ -77,6 +85,15 @@ const TimeLineComponent: React.FC<ITimeline> = ({
             {li?.designation || li?.qualificationIn}
           </div>
           <div className="tl-work-dis">{li?.workDiscription}</div>
+          {li?.certificate ? (
+            <div className="tl-certificate-contianer">
+              {li?.certificate.map((item: any) => (
+                <PillComponent label={item.name} url={item.url} />
+              ))}
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
