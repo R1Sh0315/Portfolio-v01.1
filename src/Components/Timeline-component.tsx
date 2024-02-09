@@ -6,7 +6,7 @@ interface IData {
 
 interface ITimeline {
   timelineType: string;
-  cell2Type: string;
+  cell2Type?: string;
   istoggle?: boolean;
   data: IData;
 }
@@ -23,35 +23,66 @@ const TimeLineComponent: React.FC<ITimeline> = ({
   istoggle,
   data,
 }) => {
-  // console.log("data -->", data[0].icon);
+  let cell2TypeAlt = "initial";
 
-  return (
+  const cellFormating = (val:number)=>{
+    console.log(val, val === data.length - 1 ? "end" : val === 0 ? "initial" : "mid")
+    return (val === data.length - 1 && val !== 0)  ? "end" : val === 0 ? "initial" : "mid";
+  }
+
+  const tlElement = data.map((li: any, key: number) => (
     <div
-      className={`time-line-contianer ${timelineType}-timeline${istoggle ? "-reverse" : ""}`}
+      key={key}
+      className={`time-line-contianer ${timelineType}-timeline${
+        istoggle ? "-reverse" : ""
+      }`}
     >
       <div className={`time-line-cell-1${istoggle ? "-reverse" : ""}`}>
         <div className="time-line-cell-1-container">
-          {/* <img src={data[0].icon} alt="test" /> */}
+          <div className="tl-icon-contianer">
+            <img className="tl-icon" src={li?.icon} alt="test" />
+          </div>
+          <div className="tl-com-ins-name">{li?.companyName}</div>
+          <div className="tl-year-container">{li?.yearOfWork}</div>
         </div>
       </div>
       <div className={`time-line-cell-2`}>
-        <div className={`${cell2Type}-stage`}>
+        <div className={`${cellFormating(key)}-stage ${cellFormating(key)}`}>
           <div
-            className={`${cell2Type}-stage-${cell2Type == "initial" ? "no-dash" : cell2Type == "mid" ? "dash" : "dash"}`}
+            className={`${cellFormating(key)}-stage-${
+              cellFormating(key) == "initial"
+                ? "no-dash"
+                : cellFormating(key) == "mid"
+                ? "dash"
+                : "dash"
+            }`}
           ></div>
-          <div className={`${cell2Type}-stage-core`}>
+          <div className={`${cellFormating(key)}-stage-core`}>
             <div className="core"></div>
           </div>
           <div
-            className={`${cell2Type}-stage-${cell2Type == "initial" ? "dash" : cell2Type == "mid" ? "dash" : "no-dash"}`}
+            className={`${cellFormating(key)}-stage-${
+              cellFormating(key) == "initial"
+                ? "dash"
+                : cellFormating(key) == "mid"
+                ? "dash"
+                : "no-dash"
+            }`}
           ></div>
         </div>
       </div>
       <div className={`time-line-cell-3${istoggle ? "-reverse" : ""}`}>
-        <div className="time-line-cell-3-container">Abcdef</div>
+        <div className="time-line-cell-3-container">
+          <div className="tl-qul-des">
+            {li?.designation || li?.qualificationIn}
+          </div>
+          <div className="tl-work-dis">{li?.workDiscription}</div>
+        </div>
       </div>
     </div>
-  );
+  ));
+
+  return <>{tlElement}</>;
 };
 
 export default TimeLineComponent;
