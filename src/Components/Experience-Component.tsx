@@ -7,11 +7,12 @@ import jsonData from "../Json/my.json";
 
 interface IExp {
   label: string;
+  isDark: boolean;
 }
 
 const bgList = ["Experience", "Qualification"];
 
-const ExperienceComponent: React.FC<IExp> = ({ label }) => {
+const ExperienceComponent: React.FC<IExp> = ({ label, isDark }) => {
   const qualificationData = jsonData.Qualification;
   const experienceData = jsonData.Experience;
 
@@ -43,7 +44,7 @@ const ExperienceComponent: React.FC<IExp> = ({ label }) => {
 
   return (
     <div className="exp-contianer">
-      <LabelShadowComponent label={label} />
+      <LabelShadowComponent isDark={isDark} label={label} />
       <div className="exp-content">
         <ButtonGroupComponent bgList={bgList} outputValue={selectedValue} />
       </div>

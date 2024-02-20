@@ -3,12 +3,13 @@ import LabelShadowComponent from "./Label-Shadow";
 
 interface ILabel {
   label: string;
+  isDark: boolean;
 }
 
-const CardComponent: React.FC<ILabel> = ({ label }) => {
+const CardComponent: React.FC<ILabel> = ({ label , isDark}) => {
   return (
     <div className="card-container">
-      <LabelShadowComponent label={label} />
+      <LabelShadowComponent isDark={isDark} label={label} />
     </div>
   );
 };

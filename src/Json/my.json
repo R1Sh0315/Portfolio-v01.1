@@ -40,5 +40,32 @@
       "workDiscription": "Diploma in Mechanical Engineering with proficient IT and frontend coding skills. Adept in merging engineering principles with technological expertise for innovative solutions. Passionate about leveraging cross-disciplinary knowledge for impactful projects.",
       "url": "https://dypatiluniversitypune.edu.in/"
     }
+  ],
+  "Discription": [
+    {
+      "label": "JS",
+      "url": "https://www.w3schools.com/js/",
+      "disc": "High-level, interpreted, dynamic, prototype-based, scripting, multi-paradigm, first-class functions, supports object-oriented, imperative, declarative, functional programming."
+    },
+    {
+      "label": "HTML",
+      "url": "https://www.w3schools.com/html/",
+      "disc": "Create a gradient-filled circle with SVG, using linearGradient and circle elements."
+    },
+    {
+      "label": "CSS",
+      "url": "https://www.w3schools.com/css/",
+      "disc": "CSS styles webpage appearance; controls layout, colors, fonts, sizes, and animations."
+    },
+    {
+      "label": "nodejs",
+      "url": "https://www.w3schools.com/nodejs/",
+      "disc": "Node.js is a JavaScript runtime that executes server-side code for web applications."
+    },
+    {
+      "label": "mongodb",
+      "url": "https://www.w3schools.com/mongodb/",
+      "disc": "Flexible, scalable NoSQL database. Document-oriented. JSON-like documents. Widely used in modern applications."
+    }
   ]
 }

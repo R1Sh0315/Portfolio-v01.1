@@ -7,6 +7,8 @@ import CardComponent from "./Components/Card-Components";
 import SkillComponent from "./Components/Skill-Component";
 // import backPic from "./utility/background.svg";
 import ExperienceComponent from "./Components/Experience-Component";
+import AnimatedHeader from "./Components/Node-Animation-Component";
+import ToggleBtnComponent from "./Components/Toggle-btn";
 
 export default function App() {
   const handleClick = (action: string): string => {
@@ -14,27 +16,24 @@ export default function App() {
     return `${action}`;
   };
   const navList = ["About", "Skills", "Experience", "Project", "Resume"];
+  const [isDarkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="App">
-      {/* <img className="backgroung-img" src={backPic} alt="1" /> */}
+    <div className={`App ${isDarkMode?'dark-mode':'light-mode'}`}>
+      <ToggleBtnComponent
+        label="Dark Mode"
+        toToggle={isDarkMode}
+        isDark={setDarkMode}
+      />
       <AboutComponent />
-      <div className="nav-bar">
-        {navList.map((listName, key) => (
-          <ButtonComponent
-            key={key}
-            label={listName}
-            onClick={() => handleClick(listName)}
-          />
-        ))}
+
+      <AboutCardComponent isDark={isDarkMode} />
+      <div>
+        <SkillComponent isDark={isDarkMode} label="Skills" />{" "}
       </div>
       <div>
-        <ExperienceComponent label="Experience & Qualification" />
+        <ExperienceComponent isDark={isDarkMode} label="Experience & Qualification" />
       </div>
-      <div>
-        <SkillComponent label="Skills" />{" "}
-      </div>
-      <AboutCardComponent />
     </div>
   );
 }

@@ -1,24 +1,46 @@
-import React, { useEffect, useRef } from "react";
-
+import React, { useEffect, useRef, useState } from "react";
 import SchoolIcon from "@mui/icons-material/SchoolOutlined";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
 import LabelShadowComponent from "./Label-Shadow";
 
-const AboutCardComponent: React.FC = () => {
+interface IACard {
+  isDark: boolean;
+}
+
+const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
+  const [toDisplay, setDisplay] = useState("");
+  const wordsRef = useRef(["Developer", "Creator"]); // Ref to maintain array reference
+
+  useEffect(() => {
+    function wordList(wordArr: string[]): void {
+      let idx = 0;
+
+      function displayWord(): void {
+        setDisplay(wordArr[idx]);
+        idx = (idx + 1) % wordArr.length;
+        setTimeout(displayWord, 5000);
+      }
+
+      displayWord();
+    }
+
+    wordList(wordsRef.current); // Access words array from ref
+  }, []);
+
   return (
     <div className="about-card-container">
       <div className="about-card-title">
-        <LabelShadowComponent label={"About"} />
+        <LabelShadowComponent isDark={isDark} label={"About"} />
       </div>
-      <div className="about-me">
-        I'm <span className="ac-name"> Rishikesh Bhalekar </span> an web &
-        applications
+      <div className={`about-me ${isDark ? "am-dark" : "am-light"}`}>
+        I'm <span className="ac-name"> Rishikesh Bhalekar </span> a web &
+        applications {toDisplay}.
       </div>
-      <div className="about-card-detail-contianer">
-        " I'm a professional web designer, My motive is to build a best web
-        design with my all years of experience and efforts. "
+      <div className="about-card-detail-container">
+        " I'm a professional web designer, My motive is to build the best web
+        design with all my years of experience and efforts. "
       </div>
 
       <div className="about-in-detail">
@@ -44,7 +66,6 @@ const AboutCardComponent: React.FC = () => {
         </div>
       </div>
 
-      {/* downlaid resume btn  */}
       <div className="download-resume">Download CV</div>
     </div>
   );
