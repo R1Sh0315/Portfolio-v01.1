@@ -4,6 +4,7 @@ interface ButtonProps {
   label: string;
   onClick?: () => String | number | void;
   bgColor?: string;
+  isDark?: boolean;
 }
 
 const ButtonComponent: React.FC<ButtonProps> = ({

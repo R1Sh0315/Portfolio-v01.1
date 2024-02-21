@@ -8,6 +8,7 @@ import DisplayWordsComponent from "./Display-word-Component";
 // import resume from '../utility/files/18JAN24.pdf'
 
 import jsonData from "../Json/my.json";
+import NoteComponent from "./Note-component";
 
 interface IACard {
   isDark: boolean;
@@ -36,7 +37,7 @@ const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
   }, []);
 
   const handleDownload = () => {
-    const resume = jsonData.ResumePath
+    const resume = jsonData.ResumePath;
     const link = document.createElement("a");
     link.href = resume;
     link.download = "rishiekshResume.pdf";
@@ -57,8 +58,10 @@ const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
         <DisplayWordsComponent words={words} />
       </div>
       <div className="about-card-detail-container">
-        " I'm a professional web designer, My motive is to build the best web
-        design with all my years of experience and efforts. "
+        <NoteComponent isDark={isDark}
+          description="I'm a professional web designer, My motive is to build the best web
+        design with all my years of experience and efforts."
+        />
       </div>
 
       <div className="about-in-detail">

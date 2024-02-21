@@ -46,7 +46,7 @@ const ExperienceComponent: React.FC<IExp> = ({ label, isDark }) => {
     <div className="exp-contianer">
       <LabelShadowComponent isDark={isDark} label={label} />
       <div className="exp-content">
-        <ButtonGroupComponent bgList={bgList} outputValue={selectedValue} />
+        <ButtonGroupComponent isDark={isDark} bgList={bgList} outputValue={selectedValue} />
       </div>
       <div className="exp-body-container">
         {bgList[btnGrpValue] === "Qualification" ? qualification : experience}

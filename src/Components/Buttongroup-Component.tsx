@@ -4,9 +4,10 @@ import ButtonComponent from "./Button-Component";
 interface IBtnGroup {
   bgList: string[];
   outputValue?: (value: number) => void;
+  isDark: boolean;
 }
 
-const ButtonGroupComponent: React.FC<IBtnGroup> = ({ bgList, outputValue }) => {
+const ButtonGroupComponent: React.FC<IBtnGroup> = ({ bgList, outputValue, isDark }) => {
   const [selectedIdx, setIdx] = useState(0);
 
   const onClickHandler = (val: number) => {
@@ -17,7 +18,7 @@ const ButtonGroupComponent: React.FC<IBtnGroup> = ({ bgList, outputValue }) => {
   };
 
   return (
-    <div className="bg-container">
+    <div className={`bg-container-${isDark?'dark':'light'}`}>
       {bgList.map((el, key) => (
         <ButtonComponent
           key={key}

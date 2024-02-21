@@ -11,7 +11,7 @@ import jsonData from "../Json/my.json";
 
 interface ILabel {
   label: string;
-  isDark:boolean;
+  isDark: boolean;
 }
 
 const SkillComponent: React.FC<ILabel> = ({ label, isDark }) => {
@@ -79,6 +79,30 @@ const SkillComponent: React.FC<ILabel> = ({ label, isDark }) => {
         });
       }}
     />,
+    <DProgressbarComponent
+      label="ReactJs"
+      number={65}
+      outputValue={(e) => {
+        setSubTitle(e);
+        setDetail({
+          label: JData[5].label,
+          dic: JData[5].disc,
+          url: JData[5].url,
+        });
+      }}
+    />,
+    <DProgressbarComponent
+      label="Angular"
+      number={75}
+      outputValue={(e) => {
+        setSubTitle(e);
+        setDetail({
+          label: JData[6].label,
+          dic: JData[6].disc,
+          url: JData[6].url,
+        });
+      }}
+    />,
   ];
 
   const arrBEData = [
@@ -109,7 +133,7 @@ const SkillComponent: React.FC<ILabel> = ({ label, isDark }) => {
   ];
 
   const frontEndPbar = (
-    <ProgressBarComponent percentage="73.3" pbLabel="Frontend" />
+    <ProgressBarComponent percentage="72" pbLabel="Frontend" />
   );
 
   const backEndPbar = (

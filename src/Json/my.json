@@ -66,6 +66,16 @@
       "label": "mongodb",
       "url": "https://www.w3schools.com/mongodb/",
       "disc": "Flexible, scalable NoSQL database. Document-oriented. JSON-like documents. Widely used in modern applications."
+    },
+    {
+      "label": "ReactJs",
+      "url": "https://legacy.reactjs.org/docs/getting-started.html",
+      "disc": "React.js is a declarative, efficient, and flexible JavaScript library for building user interfaces, developed by Facebook."
+    },
+    {
+      "label": "Angular",
+      "url": "https://angular.io/guide/architecture",
+      "disc": "Angular is a popular open-source web application framework maintained by Google, known for its robustness, scalability, and extensive features for building dynamic single-page applications (SPAs) using TypeScript."
     }
   ],
   "ResumePath":"/src/utility/files/18JAN24.pdf"
