@@ -297,11 +297,14 @@ strong {
 .dark-mode{
   color: #f4f4f4;
   background-color: #1c1a27;
+  padding: 10px 0;
 }
 
 .light-mode{
   color: #242424;
   background-color: #f4f4f4;
+  padding: 10px 0;
+
 }
 
 .theme-container{
@@ -661,6 +664,10 @@ strong {
   top: 18px;
   left: 13px;
   font-weight: 600;
+}
+
+.display-container{
+  margin: 0 5px;
 }
 
 .DPB-contianer{

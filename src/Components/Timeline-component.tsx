@@ -87,8 +87,8 @@ const TimeLineComponent: React.FC<ITimeline> = ({
           <div className="tl-work-dis">{li?.workDiscription}</div>
           {li?.certificate ? (
             <div className="tl-certificate-contianer">
-              {li?.certificate.map((item: any) => (
-                <PillComponent label={item.name} url={item.url} />
+              {li?.certificate.map((item: any, key: number) => (
+                <PillComponent key={key} label={item.name} url={item.url} />
               ))}
             </div>
           ) : (

@@ -4,6 +4,10 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
 import LabelShadowComponent from "./Label-Shadow";
+import DisplayWordsComponent from "./Display-word-Component";
+// import resume from '../utility/files/18JAN24.pdf'
+
+import jsonData from "../Json/my.json";
 
 interface IACard {
   isDark: boolean;
@@ -11,7 +15,9 @@ interface IACard {
 
 const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
   const [toDisplay, setDisplay] = useState("");
-  const wordsRef = useRef(["Developer", "Creator"]); // Ref to maintain array reference
+  const wordsRef = useRef(["Developer.", "Creater.", "Designer."]); // Ref to maintain array reference
+
+  const words = ["Developer", "Creater", "Designer"];
 
   useEffect(() => {
     function wordList(wordArr: string[]): void {
@@ -29,6 +35,17 @@ const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
     wordList(wordsRef.current); // Access words array from ref
   }, []);
 
+  const handleDownload = () => {
+    const resume = jsonData.ResumePath
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "rishiekshResume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.open(resume, "_blank");
+  };
+
   return (
     <div className="about-card-container">
       <div className="about-card-title">
@@ -36,7 +53,8 @@ const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
       </div>
       <div className={`about-me ${isDark ? "am-dark" : "am-light"}`}>
         I'm <span className="ac-name"> Rishikesh Bhalekar </span> a web &
-        applications {toDisplay}.
+        applications
+        <DisplayWordsComponent words={words} />
       </div>
       <div className="about-card-detail-container">
         " I'm a professional web designer, My motive is to build the best web
@@ -66,7 +84,9 @@ const AboutCardComponent: React.FC<IACard> = ({ isDark }) => {
         </div>
       </div>
 
-      <div className="download-resume">Download CV</div>
+      <div onClick={handleDownload} className="download-resume">
+        Download CV
+      </div>
     </div>
   );
 };

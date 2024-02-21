@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import ToggleBtnComponent from "./Toggle-btn";
 
 const AboutComponent: React.FC = () => {
   return (
