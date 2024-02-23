@@ -7,7 +7,6 @@
   /* opacity: 87%; */
   /* height: 100vh; */
   font-family: "Fredoka", sans-serif;
-
 }
 
 body {
@@ -80,12 +79,13 @@ a {
   font-family: "Oswald", sans-serif;
   color: E3E1D9;
   position: relative;
+  font-family: "Oswald", sans-serif;
+
 }
 
 .name {
   font-size: 26pt;
   font-weight: 900;
-  font-family: "Lobster", sans-serif;
 }
 .name:hover,
 .designation:hover,
@@ -97,15 +97,11 @@ a {
   font-size: 20pt;
   font-weight: 900;
   text-align: start;
-  font-family: "Lobster", sans-serif;
-
 }
 
 .whoami {
   font-weight: 900;
   text-align: start;
-  font-family: "Lobster", sans-serif;
-
 }
 
 .profile-card {
@@ -218,7 +214,6 @@ a {
   display: flex;
   flex-direction: column;
   font-family: "Fredoka", sans-serif;
-
 }
 
 .row-1,
@@ -325,7 +320,6 @@ strong {
 .skill-score,
 .experience-container {
   /* border: 1px solid white; */
-
 }
 
 .TBtn-container {
@@ -734,12 +728,115 @@ strong {
 
 @media screen and (max-width: 600px) {
   .about-card-container {
-    height: 200px;
+    height: 525px;
     margin: 14px 17px;
+  }
+
+  .about-me {
+    font-size: 10pt;
+    display: block;
+    text-align: left;
+  }
+  .ac-name {
+    font-size: 10pt;
   }
   .about-in-detail {
     display: flex;
     flex-direction: column;
+  }
+
+  .skill-discribtion {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin: 0 0 67px 0;
+  }
+  .experience-container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .dd-option-container-unhide {
+    display: flex;
+    flex-direction: column;
+  }
+  .pb-label {
+    padding-bottom: 19px;
+  }
+  .DPB-container,
+  .donut-container {
+    width: 100%;
+  }
+
+  .donut-container {
+    margin: 10px 0;
+  }
+  .sub-component {
+    margin: 0;
+  }
+
+  .sub-in-detail {
+    margin: 0 26px 19px 0;
+  }
+  .skill-summary {
+    width: 100%;
+    text-align: justify;
+    font-size: 400;
+    margin: 14px 0;
+  }
+  .skill-disc-panel {
+    width: 97%;
+  }
+  .bg-container-dark, .bg-container-light{
+    flex-direction: column;
+    border: none;
+  }
+  .exp-content{
+    top: 35px;
+    margin: 77px 25px 40px 0px;
+  }
+
+  .time-line-cell-2{
+    display: none;
+  }
+  .tl-work-dis{
+    font-size: 7pt;
+    text-align: left;
+  }
+  .tl-qul-des{
+    font-size: 9pt;
+  }
+
+  .tl-com-ins-name{
+    font-size: 10pt;
+  }
+  .tl-year-container{
+    font-size: 7pt;
+  }
+  .time-line-cell-1{
+    width: 38%;
+  }
+  .time-line-cell-3{
+    width: 62%;
+  }
+  .exp-contianer{
+    height: 752px;
+  }
+
+  .about-card-container, .skill-container, .exp-contianer{
+    box-shadow: none;
+    border: none;
+  }
+
+  .skill-container{
+    position: relative;
+    height: 100%;
+  }
+
+  .pill-container{
+    height: 15px;
+    font-size: 7pt;
   }
 }
 
