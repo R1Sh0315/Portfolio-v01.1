@@ -9,6 +9,9 @@ import SkillComponent from "./Components/Skill-Component";
 import ExperienceComponent from "./Components/Experience-Component";
 import AnimatedHeader from "./Components/Node-Animation-Component";
 import ToggleBtnComponent from "./Components/Toggle-btn";
+import AchivementdsComponent from "./Components/Achivements-component";
+
+import jsonData from "./Json/my.json";
 
 export default function App() {
   const handleClick = (action: string): string => {
@@ -17,23 +20,27 @@ export default function App() {
   };
   const navList = ["About", "Skills", "Experience", "Project", "Resume"];
   const [isDarkMode, setDarkMode] = useState(false);
+  const achivementData = jsonData.Achievement;
 
   return (
-    <div className={`App ${isDarkMode?'dark-mode':'light-mode'}`}>
+    <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
       <ToggleBtnComponent
         label="Dark Mode"
         toToggle={isDarkMode}
         isDark={setDarkMode}
       />
       <AboutComponent />
-
       <AboutCardComponent isDark={isDarkMode} />
-      <div>
-        <SkillComponent isDark={isDarkMode} label="Skills" />{" "}
-      </div>
-      <div>
-        <ExperienceComponent isDark={isDarkMode} label="Experience & Qualification" />
-      </div>
+      <SkillComponent isDark={isDarkMode} label="Skills" />{" "}
+      <ExperienceComponent
+        isDark={isDarkMode}
+        label="Experience & Qualification"
+      />
+      <AchivementdsComponent
+        data={achivementData}
+        isDark={isDarkMode}
+        label="Licenses & certifications"
+      />
     </div>
   );
 }
