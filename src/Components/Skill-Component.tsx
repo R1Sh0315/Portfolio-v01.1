@@ -143,7 +143,7 @@ const SkillComponent: React.FC<ILabel> = ({ label, isDark }) => {
   return (
     <div className="skill-container">
       <LabelShadowComponent isDark={isDark} label={label} />
-      <div className="skill-discribtion">
+      <div className="skill-description">
         <div className="skill-disc-panel">
           <div className="skill-summary">
             I'm experienced frontend developer proficient with {years}.

@@ -20,7 +20,7 @@ const AchivementdsComponent: React.FC<IPill> = ({ data, isDark, label }) => {
         <a className={`${isDark ? "dark" : "light"}`} href={el.url}>
           <div className="car-name">{el.name}</div>
           <div className="car-skill">
-            <div className="car-discribtion">{el?.discribtion}</div>
+            <div className="car-description">{el?.description}</div>
             <div className="pill-contient">
               {el?.skills.map((skill: any) => (
                 <PillComponent label={skill} />

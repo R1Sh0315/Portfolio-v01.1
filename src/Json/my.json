@@ -85,7 +85,7 @@
       "url": "https://www.hackerrank.com/certificates/c6933ce56d55",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Python"],
-      "discribtion": "Versatile, expressive, high-level, interpreted, dynamic, object-oriented, powerful, readable, community-driven, widely-used."
+      "description": "Versatile, expressive, high-level, interpreted, dynamic, object-oriented, powerful, readable, community-driven, widely-used."
     },
 
     {
@@ -93,56 +93,103 @@
       "url": "https://www.freecodecamp.org/certification/fccbdc3cd9d-99cb-4c8e-9592-d622b6811319/scientific-computing-with-python-v7",
       "icon": "https://media.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_200_200/0/1630639684997/free_code_camp_logo?e=1717027200&v=beta&t=fnvmod64otUkTLyhCb6UmKQJOHazmP0L-yerzueM4QA",
       "skills": ["Python"],
-      "discribtion": "Versatile, expressive, high-level, interpreted, dynamic, object-oriented, powerful, readable, community-driven, widely-used."
+      "description": "Versatile, expressive, high-level, interpreted, dynamic, object-oriented, powerful, readable, community-driven, widely-used."
     },
     {
       "name": "Introduction to cyber security learing path",
       "url": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-KU5TSEVJDI.png",
       "icon": "https://media.licdn.com/dms/image/C4D0BAQHbrQNn-KIK_g/company-logo_200_200/0/1630569839004?e=1717027200&v=beta&t=bRecEpBEW_y--V2oznWawOPwyjDmASVX3INx6qLyE_E",
       "skills": ["Cyber security"],
-      "discribtion": "Introduction to cybersecurity: Protecting digital systems from unauthorized access."
+      "description": "Introduction to cybersecurity: Protecting digital systems from unauthorized access."
     },
     {
       "name": "Javascript basic",
       "url": "https://www.hackerrank.com/certificates/8c20a8facb9b",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Javascript"],
-      "discribtion": "JavaScript is a versatile, dynamic, interpreted programming language."
+      "description": "JavaScript is a versatile, dynamic, interpreted programming language."
     },
     {
       "name": "SQL basic",
       "url": "https://www.hackerrank.com/certificates/f78640064628",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Javascript"],
-      "discribtion": "JavaScript is a versatile, dynamic, interpreted programming language."
+      "description": "JavaScript is a versatile, dynamic, interpreted programming language."
     },
     {
       "name": "Angular basic",
       "url": "https://www.hackerrank.com/certificates/b95a1d0b2491",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Angular", "Typescript"],
-      "discribtion": "Angular is a TypeScript-based framework for building web applications."
+      "description": "Angular is a TypeScript-based framework for building web applications."
     },
     {
       "name": "Nodejs basic",
       "url": "https://www.hackerrank.com/certificates/cb08d6d7d40e",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Javascript, nodejs"],
-      "discribtion": "Node.js is a JavaScript runtime built on Chrome's V8 engine."
+      "description": "Node.js is a JavaScript runtime built on Chrome's V8 engine."
     },
     {
       "name": "Javascript intermidiate",
       "url": "https://www.hackerrank.com/certificates/e72f10e5e062",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["Javascript"],
-      "discribtion": "JavaScript is a versatile, dynamic, interpreted programming language."
+      "description": "JavaScript is a versatile, dynamic, interpreted programming language."
     },
     {
       "name": "Frontend Developer (React) Certificate",
       "url": "https://www.hackerrank.com/certificates/4c7e4580cf05",
       "icon": "https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q",
       "skills": ["HTML", "CSS", "Javascript", "reactJs"],
-      "discribtion": "React is a JavaScript library for building user interfaces efficiently."
+      "description": "React is a JavaScript library for building user interfaces efficiently."
+    }
+  ],
+  "Pojects": [
+    {
+      "name": "Pet Info",
+      "description": "Create a website showcasing dog breeds categorized by type and country. With help of React",
+      "icon": "",
+      "link": "https://csb-w929yu-43ygiwe4w-r1sh0315.vercel.app/",
+      "skills": ["HTML", "CSS", "Javascript", "react"],
+      "figma": "",
+      "gitLink": "https://github.com/R1Sh0315/pet-info"
+    },
+    {
+      "name": "Postal Index number data",
+      "description": "Search by post index or branch name to display country, circle, region, division, branch, type, and name information",
+      "icon": "",
+      "link": "https://csb-4y5ol2-aul55rjj6-r1sh0315.vercel.app/",
+      "skills": ["HTML", "CSS", "Javascript", "react"],
+      "figma": "",
+      "gitLink": "https://github.com/R1Sh0315/pstal-index-number-by-react-v01"
+    },
+    {
+      "name": "Simple Calender",
+      "description": "Simple React calendar component for displaying dates",
+      "icon": "",
+      "link": "https://react-calender-v01.vercel.app/",
+      "skills": ["HTML", "CSS", "Javascript", "react"],
+      "figma": "",
+      "gitLink": "https://github.com/R1Sh0315/react-calender-v01"
+    },
+    {
+      "name": "Chat Application",
+      "description": "Chat application. Features: Will show who had joined and left the chat group with real-time enveroment. Socket.io is used to create a secure bridge between 2 clients and servers",
+      "icon": "",
+      "link": "",
+      "skills": ["HTML", "CSS", "Javascript", "react", "nodejs", "Socket.io"],
+      "figma": "",
+      "gitLink": "https://github.com/R1Sh0315/chat-application"
+    },
+    {
+      "name": "Video Search Engine",
+      "description": "Search engine using YouTube API to display music videos exclusively, providing a tailored music video browsing experience",
+      "icon": "",
+      "link": "",
+      "skills": ["HTML", "CSS", "Javascript"],
+      "figma": "https://www.figma.com/file/8vH8VWTs3XFJWaP8QmKDHW/search-Engine?type=design&node-id=0-1&mode=design&t=U1HU0J9tmyUioTpb-0",
+      "gitLink": "https://github.com/R1Sh0315/youtube-search-eng-v01"
     }
   ]
 }

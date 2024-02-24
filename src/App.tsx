@@ -12,6 +12,7 @@ import ToggleBtnComponent from "./Components/Toggle-btn";
 import AchivementdsComponent from "./Components/Achivements-component";
 
 import jsonData from "./Json/my.json";
+import ProjectComponent from "./Components/Project-component";
 
 export default function App() {
   const handleClick = (action: string): string => {
@@ -35,6 +36,11 @@ export default function App() {
       <ExperienceComponent
         isDark={isDarkMode}
         label="Experience & Qualification"
+      />
+      <ProjectComponent
+        label="My Project"
+        isDark={isDarkMode}
+        data={jsonData.Pojects}
       />
       <AchivementdsComponent
         data={achivementData}
