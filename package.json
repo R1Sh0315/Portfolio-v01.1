@@ -9,7 +9,7 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
-    "@emotion/styled": "^11.11.3",
+    "@emotion/styled": "^11.0.0-rc.0",
     "@mui/icons-material": "^5.15.7",
     "@mui/material": "^5.15.7",
     "autoprefixer": "^10.4.17",
