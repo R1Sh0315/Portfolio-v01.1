@@ -9,10 +9,9 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
-    "@emotion/react": "^11.0.0-rc.0",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10",
+    "@emotion/styled": "^11.11.3",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
     "autoprefixer": "^10.4.17",
     "flowbite-react": "^0.7.2",
     "gsap": "^3.12.5",
